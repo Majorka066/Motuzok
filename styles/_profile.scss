@@ -1,0 +1,30 @@
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 2rem;
+  font-family: $font-stack;
+
+  .avatar {
+    width: $avatar-size;
+    height: $avatar-size;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $primary-color;
+  }
+
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-button {
+      @include button-style($primary-color, $text-light);
+    }
+  }
+}
